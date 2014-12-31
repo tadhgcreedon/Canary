@@ -9,7 +9,8 @@
 import Cocoa
 import XCTest
 
-class CanaryTests: XCTestCase {
+//example test class. classes will be mapped in a 1:1 fashion with each class.
+class ExampleTest: XCTestCase {
     
     override func setUp() {
         super.setUp()

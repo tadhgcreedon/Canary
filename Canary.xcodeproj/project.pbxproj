@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		46F192F71A54013400A5F33F /* CanaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F192F61A54013400A5F33F /* CanaryTests.swift */; };
-		46F193031A54023A00A5F33F /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 46F193021A54023A00A5F33F /* LICENSE.txt */; };
+		46F192F71A54013400A5F33F /* ExampleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F192F61A54013400A5F33F /* ExampleTest.swift */; };
 		46F193071A54024700A5F33F /* Model in Resources */ = {isa = PBXBuildFile; fileRef = 46F193061A54024700A5F33F /* Model */; };
 		46F193091A54024E00A5F33F /* View in Resources */ = {isa = PBXBuildFile; fileRef = 46F193081A54024E00A5F33F /* View */; };
 		46F1930B1A54025400A5F33F /* Controller in Resources */ = {isa = PBXBuildFile; fileRef = 46F1930A1A54025400A5F33F /* Controller */; };
 		46F1930D1A54026100A5F33F /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = 46F1930C1A54026100A5F33F /* Assets */; };
 		46F1930F1A54026800A5F33F /* Supporting Files in Resources */ = {isa = PBXBuildFile; fileRef = 46F1930E1A54026800A5F33F /* Supporting Files */; };
+		46F193231A54841600A5F33F /* ControllerTests in Resources */ = {isa = PBXBuildFile; fileRef = 46F193201A54841600A5F33F /* ControllerTests */; };
+		46F193241A54841600A5F33F /* ModelTests in Resources */ = {isa = PBXBuildFile; fileRef = 46F193211A54841600A5F33F /* ModelTests */; };
+		46F193251A54841600A5F33F /* ViewTests in Resources */ = {isa = PBXBuildFile; fileRef = 46F193221A54841600A5F33F /* ViewTests */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,14 +32,15 @@
 		46F192DD1A54013300A5F33F /* Canary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Canary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46F192F01A54013400A5F33F /* CanaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanaryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46F192F51A54013400A5F33F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		46F192F61A54013400A5F33F /* CanaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanaryTests.swift; sourceTree = "<group>"; };
-		46F193021A54023A00A5F33F /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
-		46F193041A54024100A5F33F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		46F192F61A54013400A5F33F /* ExampleTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTest.swift; sourceTree = "<group>"; };
 		46F193061A54024700A5F33F /* Model */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Model; sourceTree = "<group>"; };
 		46F193081A54024E00A5F33F /* View */ = {isa = PBXFileReference; lastKnownFileType = folder; path = View; sourceTree = "<group>"; };
 		46F1930A1A54025400A5F33F /* Controller */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Controller; sourceTree = "<group>"; };
 		46F1930C1A54026100A5F33F /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = "<group>"; };
 		46F1930E1A54026800A5F33F /* Supporting Files */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Supporting Files"; sourceTree = "<group>"; };
+		46F193201A54841600A5F33F /* ControllerTests */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ControllerTests; sourceTree = "<group>"; };
+		46F193211A54841600A5F33F /* ModelTests */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ModelTests; sourceTree = "<group>"; };
+		46F193221A54841600A5F33F /* ViewTests */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ViewTests; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,8 +87,6 @@
 				46F1930A1A54025400A5F33F /* Controller */,
 				46F1930C1A54026100A5F33F /* Assets */,
 				46F1930E1A54026800A5F33F /* Supporting Files */,
-				46F193041A54024100A5F33F /* README.md */,
-				46F193021A54023A00A5F33F /* LICENSE.txt */,
 			);
 			path = Canary;
 			sourceTree = "<group>";
@@ -93,7 +94,10 @@
 		46F192F31A54013400A5F33F /* CanaryTests */ = {
 			isa = PBXGroup;
 			children = (
-				46F192F61A54013400A5F33F /* CanaryTests.swift */,
+				46F193211A54841600A5F33F /* ModelTests */,
+				46F193221A54841600A5F33F /* ViewTests */,
+				46F193201A54841600A5F33F /* ControllerTests */,
+				46F192F61A54013400A5F33F /* ExampleTest.swift */,
 				46F192F41A54013400A5F33F /* Supporting Files */,
 			);
 			path = CanaryTests;
@@ -190,7 +194,6 @@
 				46F1930F1A54026800A5F33F /* Supporting Files in Resources */,
 				46F1930D1A54026100A5F33F /* Assets in Resources */,
 				46F193071A54024700A5F33F /* Model in Resources */,
-				46F193031A54023A00A5F33F /* LICENSE.txt in Resources */,
 				46F1930B1A54025400A5F33F /* Controller in Resources */,
 				46F193091A54024E00A5F33F /* View in Resources */,
 			);
@@ -200,6 +203,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46F193241A54841600A5F33F /* ModelTests in Resources */,
+				46F193231A54841600A5F33F /* ControllerTests in Resources */,
+				46F193251A54841600A5F33F /* ViewTests in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,7 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46F192F71A54013400A5F33F /* CanaryTests.swift in Sources */,
+				46F192F71A54013400A5F33F /* ExampleTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
