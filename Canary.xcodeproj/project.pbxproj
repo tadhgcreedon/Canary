@@ -17,7 +17,6 @@
 		46FA3AD21A5F4B270001ABF7 /* canaryicons.icns in Resources */ = {isa = PBXBuildFile; fileRef = 46FA3AD01A5F4B270001ABF7 /* canaryicons.icns */; };
 		46FA3AD31A5F4B270001ABF7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46FA3AD11A5F4B270001ABF7 /* Images.xcassets */; };
 		46FA3AE61A5F4CD60001ABF7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46FA3AC41A5F4ACE0001ABF7 /* MainMenu.xib */; };
-		46FD9EFC1A60321400F69396 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46FD9EFB1A60321400F69396 /* Info.plist */; };
 		46FD9EFE1A60321D00F69396 /* ExampleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FD9EFD1A60321D00F69396 /* ExampleTest.swift */; };
 /* End PBXBuildFile section */
 
@@ -265,7 +264,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46FD9EFC1A60321400F69396 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
