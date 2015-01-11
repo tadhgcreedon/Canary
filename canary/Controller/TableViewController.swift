@@ -25,7 +25,8 @@ class TableViewController: NSViewController, NSTableViewDataSource, NSTableViewD
     @IBOutlet weak var newTaskButton: NSButton!
     //edit tasks button outlet
     @IBOutlet weak var editTasksButton: NSButton!
-    
+    //score column outlet
+    @IBOutlet weak var scoreColumn: NSTableColumn!
     
     
     //delete column for table view
@@ -213,11 +214,13 @@ class TableViewController: NSViewController, NSTableViewDataSource, NSTableViewD
         {
             deleteColumn.hidden = false;
             sender.title = "Done"
+            scoreColumn.width = scoreColumn.width - 23
         }
         else
         {
             deleteColumn.hidden = true;
             sender.title = "..."
+            scoreColumn.width = scoreColumn.width + 23
         }
     }
     

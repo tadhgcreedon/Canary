@@ -23,6 +23,7 @@
                 <outlet property="editTasksButton" destination="tFk-7A-nSP" id="nyw-tR-6KO"/>
                 <outlet property="editTasksButtonCell" destination="hvJ-9O-HrB" id="RKk-lx-zay"/>
                 <outlet property="newTaskButton" destination="yGs-Ku-75B" id="ddh-B7-pda"/>
+                <outlet property="scoreColumn" destination="etn-Da-hF1" id="a6A-25-hTU"/>
                 <outlet property="tableView" destination="wDk-Gf-cuA" id="sMg-RD-RTD"/>
                 <outlet property="taskAttributes" destination="8B2-Dq-kFy" id="Ktv-kQ-Dfo"/>
                 <outlet property="taskEffortNumberSelector" destination="YdB-rl-DMq" id="yUh-sq-YKi"/>
@@ -180,7 +181,7 @@
                                                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                     </textFieldCell>
                                                 </tableColumn>
-                                                <tableColumn identifier="Score" width="131" minWidth="40" maxWidth="1000" id="etn-Da-hF1">
+                                                <tableColumn identifier="Score" width="154" minWidth="40" maxWidth="1000" id="etn-Da-hF1">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Score">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
