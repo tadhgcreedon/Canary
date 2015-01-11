@@ -6,29 +6,33 @@
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>DBDBED79-1955-4D19-8EA1-48EB6890F9A0</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Canary</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>C989750B67A459E43048276C77B814BD73F4327A</key>
+		<key>3B695BD5E6787D405EE6D88ECC296013EF352FF9</key>
 		<string>https://github.com/tadhgcreedon/canary</string>
 	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Canary.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>C989750B67A459E43048276C77B814BD73F4327A</key>
-		<string>canary/</string>
+		<key>3B695BD5E6787D405EE6D88ECC296013EF352FF9</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/tadhgcreedon/canary</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>C989750B67A459E43048276C77B814BD73F4327A</string>
+	<string>3B695BD5E6787D405EE6D88ECC296013EF352FF9</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>C989750B67A459E43048276C77B814BD73F4327A</string>
+			<string>3B695BD5E6787D405EE6D88ECC296013EF352FF9</string>
 			<key>IDESourceControlWCCName</key>
 			<string>canary</string>
 		</dict>

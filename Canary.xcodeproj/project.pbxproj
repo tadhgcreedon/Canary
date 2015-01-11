@@ -7,19 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		46F192F71A54013400A5F33F /* ExampleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F192F61A54013400A5F33F /* ExampleTest.swift */; };
-		46F193071A54024700A5F33F /* Model in Resources */ = {isa = PBXBuildFile; fileRef = 46F193061A54024700A5F33F /* Model */; };
-		46F193091A54024E00A5F33F /* View in Resources */ = {isa = PBXBuildFile; fileRef = 46F193081A54024E00A5F33F /* View */; };
-		46F1930B1A54025400A5F33F /* Controller in Resources */ = {isa = PBXBuildFile; fileRef = 46F1930A1A54025400A5F33F /* Controller */; };
-		46F1930D1A54026100A5F33F /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = 46F1930C1A54026100A5F33F /* Assets */; };
-		46F1930F1A54026800A5F33F /* Supporting Files in Resources */ = {isa = PBXBuildFile; fileRef = 46F1930E1A54026800A5F33F /* Supporting Files */; };
-		46F193231A54841600A5F33F /* ControllerTests in Resources */ = {isa = PBXBuildFile; fileRef = 46F193201A54841600A5F33F /* ControllerTests */; };
-		46F193241A54841600A5F33F /* ModelTests in Resources */ = {isa = PBXBuildFile; fileRef = 46F193211A54841600A5F33F /* ModelTests */; };
-		46F193251A54841600A5F33F /* ViewTests in Resources */ = {isa = PBXBuildFile; fileRef = 46F193221A54841600A5F33F /* ViewTests */; };
+		46FA3ABF1A5F4AA60001ABF7 /* Canary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 46FA3ABA1A5F4AA60001ABF7 /* Canary.xcdatamodeld */; };
+		46FA3AC01A5F4AA60001ABF7 /* PreferencesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FA3ABC1A5F4AA60001ABF7 /* PreferencesManager.swift */; };
+		46FA3AC11A5F4AA60001ABF7 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FA3ABD1A5F4AA60001ABF7 /* Task.swift */; };
+		46FA3AC21A5F4AA60001ABF7 /* TasksManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FA3ABE1A5F4AA60001ABF7 /* TasksManager.swift */; };
+		46FA3ACA1A5F4AF70001ABF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FA3AC81A5F4AF70001ABF7 /* AppDelegate.swift */; };
+		46FA3ACB1A5F4AF70001ABF7 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FA3AC91A5F4AF70001ABF7 /* TableViewController.swift */; };
+		46FA3ACE1A5F4B0F0001ABF7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46FA3ACD1A5F4B0F0001ABF7 /* Info.plist */; };
+		46FA3AD21A5F4B270001ABF7 /* canaryicons.icns in Resources */ = {isa = PBXBuildFile; fileRef = 46FA3AD01A5F4B270001ABF7 /* canaryicons.icns */; };
+		46FA3AD31A5F4B270001ABF7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46FA3AD11A5F4B270001ABF7 /* Images.xcassets */; };
+		46FA3AE61A5F4CD60001ABF7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46FA3AC41A5F4ACE0001ABF7 /* MainMenu.xib */; };
+		46FD9EFC1A60321400F69396 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46FD9EFB1A60321400F69396 /* Info.plist */; };
+		46FD9EFE1A60321D00F69396 /* ExampleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FD9EFD1A60321D00F69396 /* ExampleTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		46F192F11A54013400A5F33F /* PBXContainerItemProxy */ = {
+		46FA3B251A5F50AB0001ABF7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 46F192D51A54013300A5F33F /* Project object */;
 			proxyType = 1;
@@ -30,17 +33,19 @@
 
 /* Begin PBXFileReference section */
 		46F192DD1A54013300A5F33F /* Canary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Canary.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		46F192F01A54013400A5F33F /* CanaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanaryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		46F192F51A54013400A5F33F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		46F192F61A54013400A5F33F /* ExampleTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTest.swift; sourceTree = "<group>"; };
-		46F193061A54024700A5F33F /* Model */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Model; sourceTree = "<group>"; };
-		46F193081A54024E00A5F33F /* View */ = {isa = PBXFileReference; lastKnownFileType = folder; path = View; sourceTree = "<group>"; };
-		46F1930A1A54025400A5F33F /* Controller */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Controller; sourceTree = "<group>"; };
-		46F1930C1A54026100A5F33F /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = "<group>"; };
-		46F1930E1A54026800A5F33F /* Supporting Files */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Supporting Files"; sourceTree = "<group>"; };
-		46F193201A54841600A5F33F /* ControllerTests */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ControllerTests; sourceTree = "<group>"; };
-		46F193211A54841600A5F33F /* ModelTests */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ModelTests; sourceTree = "<group>"; };
-		46F193221A54841600A5F33F /* ViewTests */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ViewTests; sourceTree = "<group>"; };
+		46FA3ABB1A5F4AA60001ABF7 /* Canary.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Canary.xcdatamodel; sourceTree = "<group>"; };
+		46FA3ABC1A5F4AA60001ABF7 /* PreferencesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PreferencesManager.swift; path = canary/Model/PreferencesManager.swift; sourceTree = SOURCE_ROOT; };
+		46FA3ABD1A5F4AA60001ABF7 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Task.swift; path = canary/Model/Task.swift; sourceTree = SOURCE_ROOT; };
+		46FA3ABE1A5F4AA60001ABF7 /* TasksManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TasksManager.swift; path = canary/Model/TasksManager.swift; sourceTree = SOURCE_ROOT; };
+		46FA3AC51A5F4ACE0001ABF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = canary/View/Base.lproj/MainMenu.xib; sourceTree = SOURCE_ROOT; };
+		46FA3AC81A5F4AF70001ABF7 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = canary/Controller/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		46FA3AC91A5F4AF70001ABF7 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewController.swift; path = canary/Controller/TableViewController.swift; sourceTree = SOURCE_ROOT; };
+		46FA3ACD1A5F4B0F0001ABF7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "canary/Supporting Files/Info.plist"; sourceTree = SOURCE_ROOT; };
+		46FA3AD01A5F4B270001ABF7 /* canaryicons.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = canaryicons.icns; path = canary/Assets/canaryicons.icns; sourceTree = SOURCE_ROOT; };
+		46FA3AD11A5F4B270001ABF7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = canary/Assets/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		46FA3B1F1A5F50AB0001ABF7 /* CanaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanaryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		46FD9EFB1A60321400F69396 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46FD9EFD1A60321D00F69396 /* ExampleTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +56,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		46F192ED1A54013400A5F33F /* Frameworks */ = {
+		46FA3B1C1A5F50AB0001ABF7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -65,7 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				46F192DF1A54013300A5F33F /* Canary */,
-				46F192F31A54013400A5F33F /* CanaryTests */,
+				46FA3B201A5F50AB0001ABF7 /* CanaryTests */,
 				46F192DE1A54013300A5F33F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,7 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				46F192DD1A54013300A5F33F /* Canary.app */,
-				46F192F01A54013400A5F33F /* CanaryTests.xctest */,
+				46FA3B1F1A5F50AB0001ABF7 /* CanaryTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,33 +87,91 @@
 		46F192DF1A54013300A5F33F /* Canary */ = {
 			isa = PBXGroup;
 			children = (
-				46F193061A54024700A5F33F /* Model */,
-				46F193081A54024E00A5F33F /* View */,
-				46F1930A1A54025400A5F33F /* Controller */,
-				46F1930C1A54026100A5F33F /* Assets */,
-				46F1930E1A54026800A5F33F /* Supporting Files */,
+				46FA3AD41A5F4B2C0001ABF7 /* Assets */,
+				46FA3ACF1A5F4B130001ABF7 /* Supporting Files */,
+				46FA3ACC1A5F4AFD0001ABF7 /* Controller */,
+				46FA3AC31A5F4AAF0001ABF7 /* Model */,
+				46FA3AC71A5F4AD40001ABF7 /* View */,
 			);
 			path = Canary;
 			sourceTree = "<group>";
 		};
-		46F192F31A54013400A5F33F /* CanaryTests */ = {
+		46FA3AC31A5F4AAF0001ABF7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				46F193211A54841600A5F33F /* ModelTests */,
-				46F193221A54841600A5F33F /* ViewTests */,
-				46F193201A54841600A5F33F /* ControllerTests */,
-				46F192F61A54013400A5F33F /* ExampleTest.swift */,
-				46F192F41A54013400A5F33F /* Supporting Files */,
+				46FA3ABA1A5F4AA60001ABF7 /* Canary.xcdatamodeld */,
+				46FA3ABC1A5F4AA60001ABF7 /* PreferencesManager.swift */,
+				46FA3ABD1A5F4AA60001ABF7 /* Task.swift */,
+				46FA3ABE1A5F4AA60001ABF7 /* TasksManager.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		46FA3AC71A5F4AD40001ABF7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				46FA3AC41A5F4ACE0001ABF7 /* MainMenu.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		46FA3ACC1A5F4AFD0001ABF7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				46FA3AC81A5F4AF70001ABF7 /* AppDelegate.swift */,
+				46FA3AC91A5F4AF70001ABF7 /* TableViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		46FA3ACF1A5F4B130001ABF7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				46FA3ACD1A5F4B0F0001ABF7 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		46FA3AD41A5F4B2C0001ABF7 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				46FA3AD01A5F4B270001ABF7 /* canaryicons.icns */,
+				46FA3AD11A5F4B270001ABF7 /* Images.xcassets */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		46FA3B201A5F50AB0001ABF7 /* CanaryTests */ = {
+			isa = PBXGroup;
+			children = (
+				46FD9EFD1A60321D00F69396 /* ExampleTest.swift */,
+				46FA3B301A6001A60001ABF7 /* ModelTests */,
+				46FA3B371A6002190001ABF7 /* ControllerTests */,
+				46FA3B211A5F50AB0001ABF7 /* Supporting Files */,
 			);
 			path = CanaryTests;
 			sourceTree = "<group>";
 		};
-		46F192F41A54013400A5F33F /* Supporting Files */ = {
+		46FA3B211A5F50AB0001ABF7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				46F192F51A54013400A5F33F /* Info.plist */,
+				46FD9EFB1A60321400F69396 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		46FA3B301A6001A60001ABF7 /* ModelTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ModelTests;
+			sourceTree = "<group>";
+		};
+		46FA3B371A6002190001ABF7 /* ControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ControllerTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,22 +194,22 @@
 			productReference = 46F192DD1A54013300A5F33F /* Canary.app */;
 			productType = "com.apple.product-type.application";
 		};
-		46F192EF1A54013400A5F33F /* CanaryTests */ = {
+		46FA3B1E1A5F50AB0001ABF7 /* CanaryTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 46F192FD1A54013400A5F33F /* Build configuration list for PBXNativeTarget "CanaryTests" */;
+			buildConfigurationList = 46FA3B271A5F50AB0001ABF7 /* Build configuration list for PBXNativeTarget "CanaryTests" */;
 			buildPhases = (
-				46F192EC1A54013400A5F33F /* Sources */,
-				46F192ED1A54013400A5F33F /* Frameworks */,
-				46F192EE1A54013400A5F33F /* Resources */,
+				46FA3B1B1A5F50AB0001ABF7 /* Sources */,
+				46FA3B1C1A5F50AB0001ABF7 /* Frameworks */,
+				46FA3B1D1A5F50AB0001ABF7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				46F192F21A54013400A5F33F /* PBXTargetDependency */,
+				46FA3B261A5F50AB0001ABF7 /* PBXTargetDependency */,
 			);
 			name = CanaryTests;
 			productName = CanaryTests;
-			productReference = 46F192F01A54013400A5F33F /* CanaryTests.xctest */;
+			productReference = 46FA3B1F1A5F50AB0001ABF7 /* CanaryTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -161,7 +224,7 @@
 					46F192DC1A54013300A5F33F = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
-					46F192EF1A54013400A5F33F = {
+					46FA3B1E1A5F50AB0001ABF7 = {
 						CreatedOnToolsVersion = 6.1.1;
 						TestTargetID = 46F192DC1A54013300A5F33F;
 					};
@@ -181,7 +244,7 @@
 			projectRoot = "";
 			targets = (
 				46F192DC1A54013300A5F33F /* Canary */,
-				46F192EF1A54013400A5F33F /* CanaryTests */,
+				46FA3B1E1A5F50AB0001ABF7 /* CanaryTests */,
 			);
 		};
 /* End PBXProject section */
@@ -191,21 +254,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46F1930F1A54026800A5F33F /* Supporting Files in Resources */,
-				46F1930D1A54026100A5F33F /* Assets in Resources */,
-				46F193071A54024700A5F33F /* Model in Resources */,
-				46F1930B1A54025400A5F33F /* Controller in Resources */,
-				46F193091A54024E00A5F33F /* View in Resources */,
+				46FA3ACE1A5F4B0F0001ABF7 /* Info.plist in Resources */,
+				46FA3AE61A5F4CD60001ABF7 /* MainMenu.xib in Resources */,
+				46FA3AD31A5F4B270001ABF7 /* Images.xcassets in Resources */,
+				46FA3AD21A5F4B270001ABF7 /* canaryicons.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		46F192EE1A54013400A5F33F /* Resources */ = {
+		46FA3B1D1A5F50AB0001ABF7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46F193241A54841600A5F33F /* ModelTests in Resources */,
-				46F193231A54841600A5F33F /* ControllerTests in Resources */,
-				46F193251A54841600A5F33F /* ViewTests in Resources */,
+				46FD9EFC1A60321400F69396 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,26 +276,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46FA3AC01A5F4AA60001ABF7 /* PreferencesManager.swift in Sources */,
+				46FA3ACB1A5F4AF70001ABF7 /* TableViewController.swift in Sources */,
+				46FA3AC11A5F4AA60001ABF7 /* Task.swift in Sources */,
+				46FA3AC21A5F4AA60001ABF7 /* TasksManager.swift in Sources */,
+				46FA3ACA1A5F4AF70001ABF7 /* AppDelegate.swift in Sources */,
+				46FA3ABF1A5F4AA60001ABF7 /* Canary.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		46F192EC1A54013400A5F33F /* Sources */ = {
+		46FA3B1B1A5F50AB0001ABF7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46F192F71A54013400A5F33F /* ExampleTest.swift in Sources */,
+				46FD9EFE1A60321D00F69396 /* ExampleTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		46F192F21A54013400A5F33F /* PBXTargetDependency */ = {
+		46FA3B261A5F50AB0001ABF7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 46F192DC1A54013300A5F33F /* Canary */;
-			targetProxy = 46F192F11A54013400A5F33F /* PBXContainerItemProxy */;
+			targetProxy = 46FA3B251A5F50AB0001ABF7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		46FA3AC41A5F4ACE0001ABF7 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46FA3AC51A5F4ACE0001ABF7 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		46F192F81A54013400A5F33F /* Debug */ = {
@@ -320,12 +397,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = "Canary/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -333,8 +413,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = "Canary/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
@@ -342,10 +424,11 @@
 			};
 			name = Release;
 		};
-		46F192FE1A54013400A5F33F /* Debug */ = {
+		46FA3B281A5F50AB0001ABF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -357,15 +440,18 @@
 				);
 				INFOPLIST_FILE = CanaryTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Canary.app/Contents/MacOS/Canary";
 			};
 			name = Debug;
 		};
-		46F192FF1A54013400A5F33F /* Release */ = {
+		46FA3B291A5F50AB0001ABF7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -399,16 +485,30 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		46F192FD1A54013400A5F33F /* Build configuration list for PBXNativeTarget "CanaryTests" */ = {
+		46FA3B271A5F50AB0001ABF7 /* Build configuration list for PBXNativeTarget "CanaryTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				46F192FE1A54013400A5F33F /* Debug */,
-				46F192FF1A54013400A5F33F /* Release */,
+				46FA3B281A5F50AB0001ABF7 /* Debug */,
+				46FA3B291A5F50AB0001ABF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		46FA3ABA1A5F4AA60001ABF7 /* Canary.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				46FA3ABB1A5F4AA60001ABF7 /* Canary.xcdatamodel */,
+			);
+			currentVersion = 46FA3ABB1A5F4AA60001ABF7 /* Canary.xcdatamodel */;
+			name = Canary.xcdatamodeld;
+			path = ../canary/Model/Canary.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 46F192D51A54013300A5F33F /* Project object */;
 }

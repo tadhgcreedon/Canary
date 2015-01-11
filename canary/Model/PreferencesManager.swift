@@ -8,16 +8,16 @@
 
 import Cocoa
 
-class PreferencesManager: NSObject {
+public class PreferencesManager: NSObject {
 
     //value that stores whether the user is a morning lark or night owl
-    enum userIsMorningLark: Int {
+    public enum userIsMorningLark: Int {
         case morningLark = 0
         case nightOwl = 1
     }
     
     //value that determines theme/background colour of tasks table
-    enum theme: Int {
+    public enum theme: Int {
         case notePad = 0
         case blankCanvas = 1
         case terminal = 2
@@ -32,14 +32,14 @@ class PreferencesManager: NSObject {
     }
     */
    
-    var notifications: Bool
+    public var notifications: Bool
     
     //default values, get updated from database upon opening app in tableviewcontroller
-    var isMorningLark = userIsMorningLark.morningLark
-    var gridTheme = theme.notePad
+    public var isMorningLark = userIsMorningLark.morningLark
+    public var gridTheme = theme.notePad
     //var deleteAnimation = taskDeleteAnimation.poof
     
-    override init()
+    override public init()
     {
         //default value, get updated from database upon opening app in tableviewcontroller
         notifications = true
