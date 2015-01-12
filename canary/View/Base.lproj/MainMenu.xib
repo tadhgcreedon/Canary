@@ -21,7 +21,6 @@
             <connections>
                 <outlet property="deleteColumn" destination="1kY-C1-oJL" id="qAi-Ni-LUW"/>
                 <outlet property="editTasksButton" destination="tFk-7A-nSP" id="nyw-tR-6KO"/>
-                <outlet property="editTasksButtonCell" destination="hvJ-9O-HrB" id="RKk-lx-zay"/>
                 <outlet property="newTaskButton" destination="yGs-Ku-75B" id="ddh-B7-pda"/>
                 <outlet property="scoreColumn" destination="etn-Da-hF1" id="a6A-25-hTU"/>
                 <outlet property="tableView" destination="wDk-Gf-cuA" id="sMg-RD-RTD"/>
@@ -127,7 +126,7 @@
         <window title="Canary" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" unifiedTitleAndToolbar="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="552" height="360"/>
+            <rect key="contentRect" x="303" y="221" width="552" height="360"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1366" height="768"/>
             <value key="minSize" type="size" width="552" height="360"/>
             <value key="maxSize" type="size" width="552" height="360"/>
@@ -147,7 +146,7 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="none" selectionHighlightStyle="none" columnReordering="NO" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" typeSelect="NO" headerView="rea-9k-t7U" id="wDk-Gf-cuA">
-                                            <rect key="frame" x="0.0" y="0.0" width="552" height="19"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="575" height="19"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

@@ -88,9 +88,9 @@
 			children = (
 				46FA3AD41A5F4B2C0001ABF7 /* Assets */,
 				46FA3ACF1A5F4B130001ABF7 /* Supporting Files */,
-				46FA3ACC1A5F4AFD0001ABF7 /* Controller */,
 				46FA3AC31A5F4AAF0001ABF7 /* Model */,
 				46FA3AC71A5F4AD40001ABF7 /* View */,
+				46FA3ACC1A5F4AFD0001ABF7 /* Controller */,
 			);
 			path = Canary;
 			sourceTree = "<group>";

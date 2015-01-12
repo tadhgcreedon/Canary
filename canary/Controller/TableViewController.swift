@@ -155,6 +155,8 @@ class TableViewController: NSViewController, NSTableViewDataSource, NSTableViewD
         var newTask = Task(taskName: taskname, priorityNumber: pn, effortNumber: en)
         tasksManager.addTask(newTask)
         
+        //need to modify based on preferences (maybe add a helper method)
+        tasksManager.tasks.sort({ $0.scoreNumber > $1.scoreNumber })
         //close popover + reset values
         taskAttributes.close()
         
