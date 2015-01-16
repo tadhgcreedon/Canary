@@ -18,8 +18,6 @@ and delete tasks via the 'Edit Tasks' button. By entering preferences, you can:
    
     - pick a theme for Canary -> not yet implemented
    
-    - choose an animation for deleting tasks -> not yet implemented
-   
     - toggle notifications on/off -> not yet implemented.
 
 
