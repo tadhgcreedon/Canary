@@ -16,7 +16,7 @@ and delete tasks via the 'Edit Tasks' button. By entering preferences, you can:
    
     - indicate whether you are a morning lark (tasks sort by most challenging in the morning, least challenging later in the day), or a night owl (vice versa) -> not yet implemented
    
-    - pick a theme for Canary -> not yet implemented
+    - pick a theme for Canary
    
     - toggle notifications on/off -> not yet implemented.
 
