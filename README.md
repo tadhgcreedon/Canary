@@ -14,7 +14,8 @@ Using Canary:
 At first, Canary will open with a blank notepad, to which you can add tasks using the 'New Task' button,
 and delete tasks via the 'Edit Tasks' button. By entering preferences, you can:
    
-    - indicate whether you are a morning lark (tasks sort by most challenging in the morning, least challenging later in the day), or a night owl (vice versa) -> not yet implemented
+    - indicate whether you are a morning lark (tasks sort by most challenging in the morning, 
+    least challenging later in the day), or a night owl (vice versa) -> not yet implemented
    
     - pick a theme for Canary
    
