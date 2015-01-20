@@ -77,4 +77,29 @@ class TasksManager: NSObject {
         return tasksNumber
     }
     
+    //sorts the tasks based on the number passed.
+    //0: sort highest to lowest
+    //1: sort lowest to highest
+    //2: sort alphabetically
+    //other: doesn't sort and just returns.
+    func sortTasks(sortType: Int)
+    {
+        if(sortType == 0)
+        {
+            tasks.sort({ $0.scoreNumber > $1.scoreNumber })
+        }
+        else if(sortType == 1)
+        {
+            tasks.sort({ $0.scoreNumber < $1.scoreNumber })
+        }
+        else if(sortType == 2)
+        {
+            tasks.sort({ $0.taskName < $1.taskName })
+        }
+        else
+        {
+            return
+        }
+    }
+    
 }

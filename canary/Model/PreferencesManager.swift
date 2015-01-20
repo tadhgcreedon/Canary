@@ -39,6 +39,18 @@ public class PreferencesManager: NSObject {
     public var gridTheme = theme.notePad
     //var deleteAnimation = taskDeleteAnimation.poof
     
+    public func setIsMorningLark(yesOrNo: Bool)
+    {
+        if(yesOrNo)
+        {
+            isMorningLark = userIsMorningLark.morningLark
+        }
+        else
+        {
+            isMorningLark = userIsMorningLark.nightOwl
+        }
+    }
+    
     override public init()
     {
         //default value, get updated from database upon opening app in tableviewcontroller

@@ -23,11 +23,14 @@
                 <outlet property="editTasksButton" destination="tFk-7A-nSP" id="nyw-tR-6KO"/>
                 <outlet property="newTaskButton" destination="yGs-Ku-75B" id="ddh-B7-pda"/>
                 <outlet property="scoreColumn" destination="etn-Da-hF1" id="a6A-25-hTU"/>
+                <outlet property="scoreTextField" destination="orc-kZ-QUg" id="yWf-xq-iwb"/>
+                <outlet property="tableHeader" destination="rea-9k-t7U" id="5Tx-NR-rTS"/>
                 <outlet property="tableView" destination="wDk-Gf-cuA" id="sMg-RD-RTD"/>
                 <outlet property="taskAttributes" destination="8B2-Dq-kFy" id="Ktv-kQ-Dfo"/>
                 <outlet property="taskEffortNumberSelector" destination="YdB-rl-DMq" id="yUh-sq-YKi"/>
                 <outlet property="taskNameText" destination="HTo-Xr-712" id="7fb-fX-6NY"/>
                 <outlet property="taskPriorityNumberSelector" destination="aWN-7Y-JVl" id="eZ4-Ld-xaO"/>
+                <outlet property="taskTextField" destination="jb6-KI-E6m" id="6q3-Ks-R7L"/>
             </connections>
         </customObject>
         <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
@@ -151,7 +154,7 @@
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <tableViewGridLines key="gridStyleMask" vertical="YES" dashed="YES"/>
-                                            <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="gridColor" name="controlShadowColor" catalog="System" colorSpace="catalog"/>
                                             <tableColumns>
                                                 <tableColumn identifier="Select" editable="NO" width="20" minWidth="10" maxWidth="3.4028234663852886e+38" id="1kY-C1-oJL">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left">
@@ -414,14 +417,14 @@ Gw
         <window title="Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="eSU-8w-RDM" userLabel="Preferences">
             <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="121" y="234" width="313" height="208"/>
+            <rect key="contentRect" x="121" y="234" width="313" height="187"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1050"/>
             <view key="contentView" id="usY-Rj-RPO">
-                <rect key="frame" x="0.0" y="4" width="313" height="208"/>
+                <rect key="frame" x="0.0" y="1" width="313" height="187"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <matrix verticalHuggingPriority="750" allowsEmptySelection="NO" autorecalculatesCellSize="YES" id="meR-yq-HP6">
-                        <rect key="frame" x="20" y="126" width="127" height="38"/>
+                        <rect key="frame" x="20" y="105" width="127" height="38"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         <size key="cellSize" width="104" height="18"/>
@@ -435,16 +438,22 @@ Gw
                                 <buttonCell type="radio" title="Morning Lark" imagePosition="left" alignment="left" state="on" tag="1" inset="2" id="ff9-at-mnb">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
+                                    <connections>
+                                        <action selector="preferencesMorningLark:" target="QBe-2P-tdL" id="p7K-FV-gLe"/>
+                                    </connections>
                                 </buttonCell>
                                 <buttonCell type="radio" title="Night Owl" imagePosition="left" alignment="left" inset="2" id="uPk-WH-Y2F">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
+                                    <connections>
+                                        <action selector="preferencesNightOwl:" target="QBe-2P-tdL" id="Rqp-7G-EMA"/>
+                                    </connections>
                                 </buttonCell>
                             </column>
                         </cells>
                     </matrix>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="D3O-Gf-UrS">
-                        <rect key="frame" x="18" y="172" width="237" height="17"/>
+                        <rect key="frame" x="18" y="151" width="237" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Are You a Morning Lark or Night Owl?" id="AJt-z8-7ks">
                             <font key="font" metaFont="system"/>
@@ -453,7 +462,7 @@ Gw
                         </textFieldCell>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="rFW-Mz-ods">
-                        <rect key="frame" x="18" y="49" width="54" height="17"/>
+                        <rect key="frame" x="18" y="28" width="54" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Theme: " id="66J-oD-rKo">
                             <font key="font" metaFont="system"/>
@@ -462,22 +471,34 @@ Gw
                         </textFieldCell>
                     </textField>
                     <popUpButton verticalHuggingPriority="750" id="3nW-u2-XyV">
-                        <rect key="frame" x="178" y="44" width="130" height="26"/>
+                        <rect key="frame" x="178" y="23" width="130" height="26"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="KbQ-zj-DhL">
+                        <popUpButtonCell key="cell" type="push" title="Blank Canvas" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="cmR-N7-lJB" id="KbQ-zj-DhL">
                             <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="menu"/>
                             <menu key="menu" title="Theme" id="H2A-UY-RiI">
                                 <items>
-                                    <menuItem title="Notepad" id="Qde-b6-Po0"/>
-                                    <menuItem title="Blank Canvas" id="cmR-N7-lJB"/>
-                                    <menuItem title="Terminal" id="ofG-nu-Ets"/>
+                                    <menuItem title="Blank Canvas" id="cmR-N7-lJB">
+                                        <connections>
+                                            <action selector="preferencesThemeBlankCanvas:" target="QBe-2P-tdL" id="OaW-N8-lQH"/>
+                                        </connections>
+                                    </menuItem>
+                                    <menuItem title="Notepad" id="Qde-b6-Po0">
+                                        <connections>
+                                            <action selector="preferencesThemeNotepad:" target="QBe-2P-tdL" id="XZh-KV-ZOB"/>
+                                        </connections>
+                                    </menuItem>
+                                    <menuItem title="Terminal" id="ofG-nu-Ets">
+                                        <connections>
+                                            <action selector="preferencesThemeTerminal:" target="QBe-2P-tdL" id="YeJ-s1-ZTX"/>
+                                        </connections>
+                                    </menuItem>
                                 </items>
                             </menu>
                         </popUpButtonCell>
                     </popUpButton>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="wbT-5L-iLB">
-                        <rect key="frame" x="18" y="101" width="277" height="17"/>
+                        <rect key="frame" x="18" y="80" width="277" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Tasks will be sorted depending on selection." id="ehe-m0-qjE">
                             <font key="font" metaFont="system" size="10"/>
@@ -485,33 +506,9 @@ Gw
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="StV-3R-lSv">
-                        <rect key="frame" x="18" y="15" width="149" height="17"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Task Delete Animation: " id="Eev-U8-AZT">
-                            <font key="font" metaFont="system"/>
-                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
-                    <popUpButton verticalHuggingPriority="750" id="8kh-XA-jUS" userLabel="Task Deletion Animation">
-                        <rect key="frame" x="178" y="8" width="130" height="26"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="pWw-O6-i5d" userLabel="Task Deletion Animation">
-                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="menu"/>
-                            <menu key="menu" id="CNX-Zg-3pU" userLabel="Task Deletion Animation">
-                                <items>
-                                    <menuItem title="Poof" id="4I8-IZ-HWf" userLabel="Poof"/>
-                                    <menuItem title="Laser" id="d3Q-ce-Rtz" userLabel="Laser"/>
-                                    <menuItem title="None" id="QYu-SZ-CsB" userLabel="None"/>
-                                </items>
-                            </menu>
-                        </popUpButtonCell>
-                    </popUpButton>
                 </subviews>
             </view>
-            <point key="canvasLocation" x="359.5" y="895"/>
+            <point key="canvasLocation" x="359.5" y="884.5"/>
         </window>
         <drawer trailingOffset="15" id="RGh-q1-o9W">
             <size key="contentSize" width="100" height="100"/>

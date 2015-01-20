@@ -1,10 +1,6 @@
-//
-//  TableViewController.swift
-//  Canary
-//
-//  Created by Tadhg Creedon on 2014-12-10.
-//  Copyright (c) 2014 com.tadhgcreedon. All rights reserved.
-//
+/*
+Manipulates values in the model classes and performs CRUD operations on the Core Data model.
+*/
 
 import Cocoa
 import CoreData
@@ -27,10 +23,15 @@ class TableViewController: NSViewController, NSTableViewDataSource, NSTableViewD
     @IBOutlet weak var editTasksButton: NSButton!
     //score column outlet
     @IBOutlet weak var scoreColumn: NSTableColumn!
-    
-    
     //delete column for table view
     @IBOutlet weak var deleteColumn: NSTableColumn!
+    //table cell for each task
+    @IBOutlet weak var taskTextField: NSTextFieldCell!
+    //table cell for each task's score
+    @IBOutlet weak var scoreTextField: NSTextFieldCell!
+    //the header above the table contents
+    @IBOutlet weak var tableHeader: NSTableHeaderView!
+    
     
     //holds array of tasks + helper methods
     var tasksManager = TasksManager()
@@ -111,7 +112,7 @@ class TableViewController: NSViewController, NSTableViewDataSource, NSTableViewD
         //core data stuff end
         
         //sort by score number
-        tasksManager.tasks.sort({ $0.scoreNumber > $1.scoreNumber })
+        tasksManager.sortTasks(0)
         
         //set grid theme
         
@@ -314,8 +315,43 @@ class TableViewController: NSViewController, NSTableViewDataSource, NSTableViewD
         println("Deleted all tasks")
     }
     
+    //ibactions for preferences menu go here
+    
+    @IBAction func preferencesMorningLark(sender: NSButtonCell) {
+        preferencesManager.isMorningLark = PreferencesManager.userIsMorningLark.morningLark
+        tasksManager.sortTasks(0)
+        tableView.reloadData()
+    }
+    
+    @IBAction func preferencesNightOwl(sender: NSButtonCell) {
+        preferencesManager.isMorningLark = PreferencesManager.userIsMorningLark.morningLark
+        tasksManager.sortTasks(1)
+        tableView.reloadData()
+    }
+    
+    //changes the theme of the tasks table to make it look like a notepad.
+    //Background: Yellow
+    //Lines: Red
+    @IBAction func preferencesThemeNotepad(sender: NSMenuItem) {
+        setGridTheme(NSColor.yellowColor(), linesColor: NSColor.redColor())
+    }
+    
+    //changes the theme of the tasks table to make it look like a black sheet of lined paper.
+    //Background: White
+    //Lines: Gray
+    @IBAction func preferencesThemeBlankCanvas(sender: NSMenuItem) {
+        setGridTheme(NSColor.whiteColor(), linesColor: NSColor.grayColor())
+    }
+    
+    //changes the theme of the tasks table to make it look like a UNIX terminal.
+    //Background: Black
+    //Lines: Green
+    @IBAction func preferencesThemeTerminal(sender: NSMenuItem) {
+        setGridTheme(NSColor.blackColor(), linesColor: NSColor.greenColor())
+    }
     
     //helper method that returns int value of selector string value.
+    //So brief it should just be in the method itself.
     func popUpButtonNumber(number: String) -> Int
     {
         return number.toInt()!
@@ -369,11 +405,17 @@ class TableViewController: NSViewController, NSTableViewDataSource, NSTableViewD
         inTableView.allowsColumnReordering = false
     }
     
-    func setGridTheme(bgColour: NSColor, linesColour: NSColor)
+    func setGridTheme(bgColor: NSColor, linesColor: NSColor)
     {
         //set grid colours
-        tableView.backgroundColor = bgColour
-        tableView.gridColor = linesColour
+        tableView.backgroundColor = bgColor
+        tableView.gridColor = linesColor
+        //set task cell colour
+        taskTextField.backgroundColor = bgColor
+        //set score cell colour
+        scoreTextField.backgroundColor = bgColor
+        //set table header colour
+        
     }
     
 }
