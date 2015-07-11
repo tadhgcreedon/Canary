@@ -49,7 +49,7 @@ class TableViewController: NSViewController, NSTableViewDataSource, NSTableViewD
         //core data stuff start
         
         
-        var appDelegate: AppDelegate = (NSApplication.sharedApplication().delegate as AppDelegate)
+        var appDelegate: AppDelegate = (NSApplication.sharedApplication().delegate as! AppDelegate)
         var context: NSManagedObjectContext! = appDelegate.managedObjectContext
         
         var request = NSFetchRequest(entityName: "Task")
@@ -61,8 +61,8 @@ class TableViewController: NSViewController, NSTableViewDataSource, NSTableViewD
         if(results.count > 0)
         {
             for result in results {
-                var tasknamed: String = result.valueForKey("taskName") as String
-                var scorenum: Int = result.valueForKey("scoreNumber") as Int
+                var tasknamed: String = result.valueForKey("taskName") as! String
+                var scorenum: Int = result.valueForKey("scoreNumber") as! Int
                 tasksManager.addCreatedTask(tasknamed, scorenumber: scorenum)
                 
                 println("loaded task \(tasknamed) in to tasks manager")
@@ -83,18 +83,18 @@ class TableViewController: NSViewController, NSTableViewDataSource, NSTableViewD
         
         if(results2.count > 0)
         {
-            if(results2[0].valueForKey("morningLark") as Bool == false)
+            if(results2[0].valueForKey("morningLark") as! Bool == false)
             {
                 preferencesManager.isMorningLark = PreferencesManager.userIsMorningLark.nightOwl
             }
             
-            if(results2[0].valueForKey("theme") as Int == 2)
+            if(results2[0].valueForKey("theme") as! Int == 2)
             {
                 preferencesManager.gridTheme = PreferencesManager.theme.blankCanvas
             }
             else
             {
-                if(results2[0].valueForKey("theme") as Int == 3)
+                if(results2[0].valueForKey("theme") as! Int == 3)
                 {
                     preferencesManager.gridTheme = PreferencesManager.theme.terminal
                 }
@@ -166,10 +166,10 @@ class TableViewController: NSViewController, NSTableViewDataSource, NSTableViewD
         
         //core data stuff start
         
-        var appDelegate: AppDelegate = (NSApplication.sharedApplication().delegate as AppDelegate)
+        var appDelegate: AppDelegate = (NSApplication.sharedApplication().delegate as! AppDelegate)
         var context: NSManagedObjectContext! = appDelegate.managedObjectContext
         
-        var aNewTask = NSEntityDescription.insertNewObjectForEntityForName("Task", inManagedObjectContext: context) as NSManagedObject
+        var aNewTask = NSEntityDescription.insertNewObjectForEntityForName("Task", inManagedObjectContext: context) as! NSManagedObject
         aNewTask.setValue(newTask.taskName, forKey: "taskName")
         aNewTask.setValue(newTask.scoreNumber, forKey: "scoreNumber")
         context.save(nil)
@@ -246,7 +246,7 @@ class TableViewController: NSViewController, NSTableViewDataSource, NSTableViewD
         
         //Core Data Stuff start
         
-        var appDelegate: AppDelegate = (NSApplication.sharedApplication().delegate as AppDelegate)
+        var appDelegate: AppDelegate = (NSApplication.sharedApplication().delegate as! AppDelegate)
         var context: NSManagedObjectContext! = appDelegate.managedObjectContext
         
         var request = NSFetchRequest(entityName: "Task")
@@ -254,7 +254,7 @@ class TableViewController: NSViewController, NSTableViewDataSource, NSTableViewD
         
         var results:NSArray! = context.executeFetchRequest(request, error:nil)
         
-        var taskToDelete:NSManagedObject = results[rowToDelete] as NSManagedObject
+        var taskToDelete:NSManagedObject = results[rowToDelete] as! NSManagedObject
         context.deleteObject(taskToDelete)
         
         //Core Data stuff end
@@ -277,7 +277,7 @@ class TableViewController: NSViewController, NSTableViewDataSource, NSTableViewD
         
         //core data stuff start
         
-        var appDelegate: AppDelegate = (NSApplication.sharedApplication().delegate as AppDelegate)
+        var appDelegate: AppDelegate = (NSApplication.sharedApplication().delegate as! AppDelegate)
         var context: NSManagedObjectContext! = appDelegate.managedObjectContext
         
         var request = NSFetchRequest(entityName: "Task")
@@ -288,8 +288,8 @@ class TableViewController: NSViewController, NSTableViewDataSource, NSTableViewD
         if(results.count > 0)
         {
             for result in results {
-                var tasknamed: String = result.valueForKey("taskName") as String
-                var res:NSManagedObject = result as NSManagedObject
+                var tasknamed: String = result.valueForKey("taskName") as! String
+                var res:NSManagedObject = result as! NSManagedObject
                 context.deleteObject(res)
                 
                 println("Task \(tasknamed) Deleted")
